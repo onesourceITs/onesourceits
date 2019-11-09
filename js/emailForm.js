@@ -32,6 +32,8 @@ $(function () {
             },
             data: formData
         }).done(function (d) {
+            alert(d);
+            return false;
             let dataObj = JSON.parse(d);
             if (dataObj.response == 1) {
                 $('#modal-header').fadeOut(750, function () {
