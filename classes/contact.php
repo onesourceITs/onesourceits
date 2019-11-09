@@ -1,6 +1,6 @@
 <?php
 
-require_once '/home4/onesoux7/config/config.php';
+require_once '/var/www/html/websites/config/config.php';
 
 if (isset($_GET["request"])){
     switch ($_GET["request"]){
