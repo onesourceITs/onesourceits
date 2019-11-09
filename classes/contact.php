@@ -1,6 +1,6 @@
 <?php
 
-require_once '/var/www/html/websites/config/config.php';
+require_once '/var/www/html/config/config.php';
 
 if (isset($_GET["request"])){
     switch ($_GET["request"]){
