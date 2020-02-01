@@ -9,7 +9,7 @@ $(function () {
         let formData = $(this).serialize();
         $.ajax({
             type: 'POST',
-            url: 'classes/contact.php?request=sendEmail',
+            url: 'classes/contact.php?request=check',
             beforeSend: function () {
                 $('#SendRequest').attr('disabled', 'true');
                 createElement('span', '#SendRequest', 'prepend', attributes = [{
