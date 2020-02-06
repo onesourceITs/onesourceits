@@ -1,7 +1,9 @@
-$('#emailForm').submit(function (e) {
+document.querySelector('#emailForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    let formData = $(this).serialize();
-    $.post('classes/contact.php?request=check', formData, function (d) {
+    let formData = $('#emailForm').serialize();
+    $.post('classes/starter.php?action=Contact.addContact', formData, function (d) {
+        alert(d);
+        return false;
         let dataObj = JSON.parse(d);
         if (dataObj.response == 1) {
             $('#modal-header').fadeOut(750, function () {

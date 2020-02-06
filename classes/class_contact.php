@@ -3,12 +3,18 @@
                 ** Handle info collected from contact form
 */
 
+require_once 'config.php';
+
 class Contact
 {
+
+    public $dbConn;
+    
+    public function __construct() {
+        
+    }
     public function addContact()
     {
-        echo "getting Here";
-        return false;
         $conn = $this->dbConn();
         // post data
         $email = $_POST["contactFrom"];
