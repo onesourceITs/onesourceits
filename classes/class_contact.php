@@ -1,19 +1,16 @@
 <?php
-require_once 'config.php';
+/*
+                ** Handle info collected from contact form
+*/
 
-if (isset($_GET["request"])){
-    switch ($_GET["request"]){
-        case "check":
-            addContact();
-        break;
-    }
-}
-
-
-function addContact(){
-    $connObj = new Connection;
-    $conn = $connObj->dbConn();
-    // post data
+class Contact
+{
+    public function addContact()
+    {
+        echo "getting Here";
+        return false;
+        $conn = $this->dbConn();
+        // post data
         $email = $_POST["contactFrom"];
         $subject = $_POST["contactSubject"];
         $message = $_POST["contactMsg"];
@@ -32,13 +29,21 @@ function addContact(){
             $stmt->bindParam(':date', $date);
             $stmt->execute();
 
+            $sendEmail = $this->SendEmail($email, $subject, $message, $date);
+
             echo json_encode(["response" => 1]);
-        }
-        catch (PDOException $e) {
-            echo "Error inserting contact data into db:".$e->getMessage();
+        } catch (PDOException $e) {
+            echo "Error inserting contact data into db:" . $e->getMessage();
         }
     }
 
+    public function SendEmail($email, $subject, $message, $date)
+    {
+        $to = "info@onesourceits.com";
+        $subject = "New contact Request!";
+        $msg = "You have a new form submission from main contact form.";
 
-
-?>
+        $sendVerification = mail($to, $subject, $message);
+        return $sendVerification;
+    }
+}
