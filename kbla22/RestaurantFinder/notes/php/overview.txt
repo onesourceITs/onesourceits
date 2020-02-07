@@ -1,0 +1,22 @@
+Overview of what the php will be doing for the restaurant finder app.
+
+First we will start with the DB.
+The first table will be for the main record profile.
+
+Key:
+restaurantId,
+restaurantName,
+address,
+phone,
+
+The php code files, will be placed into the PHP directory, which is located in the main directory of the application.
+
+Files:
+class_RestaurantFinder.php: will be where the doAction, Connection, and other primary methods will be held.
+class_NewEntry.php: will be where the props and methods will be held for the Restaurant Entries.
+class_Search.php: will be where the different db querys are held for performing a search.
+starter.php: will be where the RestaurantFinder class is declared and the doAction method is called.
+
+
+
+
