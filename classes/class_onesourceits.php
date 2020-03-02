@@ -66,17 +66,18 @@ class OneSourceits
         $date = Date('m-d-Y');
 
         try {
-            $emailObj = new EmailHtml($email, "New OneSourceIT Contact Form Submitted", ["subject" => $subject, "message" => $message]);
-            $subStatus = "yes";
+            $emailObj = new EmailHtml("info@onesourceits.com", "New OneSourceIT Contact Form Submitted", ["from" => $email, "subject" => $subject, "message" => $message]);
             if ($emailObj->SendEmail() === FALSE) {
                 echo json_encode(["msg" => "badEmail"]);
                 return false;
             }
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = $conn->prepare("INSERT INTO contacts(email, message)
-            VALUES(:email, :subStatus)");
+            $sql = $conn->prepare("INSERT INTO contacts(email, subject, message, date)
+            VALUES(:email, :subject, :message, :date)");
             $sql->bindParam(':email', $email);
-            $sql->bindParam(':subStatus', $subStatus);
+            $sql->bindParam(':subject', $subject);
+            $sql->bindParam(':message', $message);
+            $sql->bindParam(':date', $date);
             $sql->execute();
 
             echo json_encode(["msg" => "true"]);
