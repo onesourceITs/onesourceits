@@ -28,7 +28,10 @@
 
   <title>OneSource IT Solutions- Palatka, Florida Web Development Company</title>
 
-  <script src="js/createElement.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
@@ -44,6 +47,12 @@
   <link href="css/creative.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
+  <script>
+    function check(x, y) {
+      alert(x);
+      alert(y);
+    }
+  </script>
 </head>
 
 <body id="page-top">
@@ -63,23 +72,22 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a id="aboutLink" class="nav-link" href="about.html">About</a>
+            <a id="aboutLink" class="nav-link" href="pages/about.html">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="" id="serviceList" href="#">Services</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="" id="serviceList" href="#">Service
+              Packages</a>
             <div class="dropdown-menu">
-              <a href="#SEO" class="nav-link js-scroll-trigger text-dark" role="heading" id="SearchEngine">
-                Search Engine Optimization</a>
-              <!-- <a href="#DBMS" class="nav-link js-scroll-trigger" role="heading" id="DatabaseManagement">
-                 Database Management & Security</a>-->
-              <a href="#SPADS" class="nav-link js-scroll-trigger text-dark" role="heading" id="SinglePageAds">
-                Single Page Web Advertisement</a>
-              <a href="#WSD" class="nav-link js-scroll-trigger text-dark" role="heading" id="WebSiteDevelopment">
-                Web Site Development</a>
-              <!-- <a href="#WAD" class="nav-link js-scroll-trigger " role="heading" id="WebApplicationDevelopment">
-                 Web Application Development</a>-->
-              <a href="#ADA" class="nav-link js-scroll-trigger text-dark" role="heading" id="ADAWebCompliance">
-                ADA Web Compliance Consulting</a>
+              <a href="#onlineMarketing_brandAwareness" class="nav-link js-scroll-trigger text-dark" role="heading"
+                id="SearchEngine">
+                Online Marketing & Brand Awareness
+              </a>
+              <a href="#Build a Website" class="nav-link js-scroll-trigger" role="heading">
+                Build a Website
+              </a>
+              <a href="pages/otherServices.html" class="nav-link text-dark" role="heading">
+                Other Services we Offer
+              </a>
             </div>
           </li>
           <!--
@@ -100,49 +108,27 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-          <h1 style="font-size: 44px;" class="text-uppercase text-white font-weight-bold">OneSourceITS- Web Design,
-            Development, & Data Management in palatka, FL</h1>
+          <h1 style="font-size: 44px;" class="text-uppercase text-white font-weight-bold">
+            OneSourceITS- Web Design,
+            Software Development, & Online Marketing in palatka, FL
+          </h1>
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">One Source IT Solutions, is here to offer everything one may
+          <p class="text-white-75 font-weight-light mb-5">
+            OneSource IT Solutions LLC, is here to offer everything one may
             need when it comes to the World Wide
             Web. We
-            offer services, like Search Engine Optimization, Single Page Adds, Front to Back Web Development,
-            Web Applications, and ADA Web
-            Compliance Consulting. Our prices are fair and the customer service, will leave you feeling
-            accomplished.</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+            offer services, like Search Engine Optimization, Online Marketing, Website Builds,
+            Business Management Software, ADA Web
+            Compliance Consulting, and more. Our prices are fair and the customer service, will leave you feeling
+            accomplished.
+          </p>
+          <a class="btn btn-primary btn-xl " href="pages/about.html">Find Out More</a>
         </div>
       </div>
     </div>
   </header>
-
-  <!-- About Section -->
-  <section class="page-section bg-primary" id="about" tabindex="0">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">About our Local Web Development, Design, & Data Management Company</h2>
-          <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">
-            One Source IT Solutions, is a web
-            Development company based in Palatka, Florida. Our team, is full
-            of passion and wake up every day excited, to make a difference doing what we love!
-            <br /><br />
-            <span>When you choose One Source IT Solutions, you are choosing success!</span>
-          </p>
-          <p>
-            <a href="https://www.bbb.org/us/fl/hollister/profile/web-design/onesource-it-solutions-llc-0403-235989357/#sealclick"
-              target="_blank" rel="nofollow"><img
-                src="https://seal-northeastflorida.bbb.org/seals/blue-seal-120-70-bbb-235989357.png" style="border: 0;"
-                alt="OneSource IT Solutions, LLC BBB Business Review" /></a>
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Services Section -->
   <section class="page-section" id="services">
@@ -153,35 +139,43 @@
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-            <h3 tabindex="0" id="SEO" class="h4 mb-2">Search Engine Optimization</h3>
-            <p class="text-muted mb-0">Are you a start up company looking to create an appearance online? Or maybe you
-              already
-              have a site, but your page is not getting any web traffic? If you answered yes to one of
-              these questions, then you're in the right place. <br /><br /> Our Search Engine
-              Optimization service, will help give your companies google ranking a boost, which in
-              turn will increase the amount of times your company name, will show up on a persons
-              google search result page.</p>
-            <p class="text-muted mb-0">Starting At: $250 / Month</p>
+            <h3 tabindex="0" id="onlineMarketing_brandAwareness" class="h4 mb-2">Online Marketing & Brand Awareness</h3>
+            <p class="text-muted mb-0">
+              Are you a start up company looking to create an appearance online? Or maybe you
+              already have a site and brand established, but not seeing a change in customer flow? If you answered yes
+              to one of
+              these questions, then you're in the right place. Get in contact with us today, and let's make it happen.
+            </p>
+
+            <p class="text-muted mb-0">
+              <a class="btn btn-primary btn-xl " href="pages/online_marketing_brand_awareness.html">Learn More</a>
+            </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-            <h3 tabindex="0" id="ADA" class="h4 mb-2">ADA Web Compliance </h3>
+            <h3 tabindex="0" id="BuildAWebsite" class="h4 mb-2">Build A Website</h3>
             <p class="text-muted mb-0">
-              The World Wide Web, has become the biggest place for businesses to thrive. So, just as businesses and
-              government buildings need to be accessible for people's with disabilities, so do business and government
-              web sites. Because this is a law, there are guidelines to follow, when adhearing to the ADA standards, set
-              by the Web Content Accessibility Guidelines 2.1 (WCAG). OneSource IT Solutions, is here to help bring your
-              site
-              up to standard.
+              Need a website? We can take care of that.  Our "Build A Website" service, is split into three packages.
             </p>
+            <ul class="list-group" style="list-style-type: square;">
+              <li class="list-item">
+                Level 1: <span class="sr-only">Gold</span>
+              </li>
+              <li class="list-item">
+                Level 2: <span class="sr-only">Silver</span>
+              </li>
+              <li class="list-item">
+                Level 3: <span class="sr-only">Bronze</span>
+              </li>
+            </ul>
             <p class="text-muted mb-0">
-              Consulting: $15 per page
-              Correction: $25 per hour
+              <a class="btn btn-primary btn-xl " href="pages/build_a_website.html">Learn More</a>
             </p>
           </div>
         </div>
+        <!--
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-globe text-primary mb-4"></i>
@@ -210,96 +204,11 @@
             <p class="text-muted mb-0">Price is dependent on customers goals!</p>
           </div>
         </div>
+      -->
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Section 
-  <section id="portfolio">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-            <div class="portfolio-box-caption p-3">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
--->
   <!-- Call to Action Section 
   <section class="page-section bg-dark text-white">
     <div class="container text-center">
@@ -311,6 +220,86 @@
   </div>
   </section>
   -->
+
+  <!-- Social Links Section -->
+  <section class="page-section" id="social-links" tabindex="0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Social Links</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">
+            Check us out on Social Media!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 text-center mx-auto">
+          <div class="social-icons">
+            <ul class="navbar-nav text-center mb-0 mx-auto">
+              <li class="nav-item">
+                <a href="https://www.facebook.com/onesourceits" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                  <span class="sr-only">Link to Facebook page.</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://twitter.com/ItOnesource">
+                  <i class="fab fa-twitter"></i>
+                  <span class="sr-only">Link to twitter</span>
+                </a>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review Links Section -->
+  <section class="page-section" id="review-links" tabindex="0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Our Review Links</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">
+            Here to leave a review? or just want to see what others have said? Check out our review pages.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-10 text-center mx-auto">
+          <div class="social-icons">
+            <ul class="navbar-nav text-center mb-0 mx-auto">
+              <li class="nav-item">
+                <a href="https://g.page/onesource-it-solutions-llc?gt">
+                  <i class="fab fa-google"></i>
+                  <span class="sr-only">Link to google business profile</span>
+                </a>
+              </li>
+              <li class="nav-item mr-1">
+                <a href="https://www.bbb.org/us/fl/hollister/profile/web-design/onesource-it-solutions-llc-0403-235989357/#sealclick"
+                  target="_blank" rel="nofollow"><img
+                    src="https://seal-northeastflorida.bbb.org/seals/blue-seal-120-70-bbb-235989357.png"
+                    style="border: 0;" alt="OneSource IT Solutions, LLC BBB Business Review" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section class="page-section" id="contact" tabindex="0">
     <div class="container">
@@ -333,41 +322,13 @@
           <!--<a class="d-block"
             href="mailto:info@onesourceits.com?Subject=New%20Contact%20Submission">info@onesourceits.com</a>-->
         </div>
-      </div>
-      <div class="row mt-2">
-        <div class="col mr-auto text-center" style="position: relative;">
-          <div class="social-icons">
-            <ul class="list-unstyled text-center mb-0">
-              <li class="list-unstyled-item">
-                <a href="https://www.facebook.com/onesourceits" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
-                  <span class="sr-only">Link to Facebook page.</span>
-                </a>
-              </li>
-              <li class="list-unstyled-item">
-                <a href="https://twitter.com/ItOnesource">
-                  <i class="fab fa-twitter"></i>
-                  <span class="sr-only">Link to twitter</span>
-                </a>
-              </li>
-              <!--
-              <li class="list-unstyled-item">
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              -->
-            </ul>
-          </div>
-        </div>
-
         <!-- ****** Modal for email ****** -->
 
         <div class="modal fade" id="emailModal" tabindex="-1">
           <div class="modal-dialog modal-dialog-center">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 id="modal-header" class="h4 text-center">Email Us</h1>
+                <h2 id="modal-header" class="h4 text-center">Email Us</h2>
               </div>
 
               <div class="modal-body text-center" id="modal-body">
@@ -381,7 +342,7 @@
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <label for="subject">Subject (Question/Service): </label>
+                      <label for="Subject">Subject (Question/Service): </label>
                       <input class="form-control" id="Subject" type="text" name="contactSubject" />
                     </div>
                   </div>
@@ -417,10 +378,6 @@
       <div class="small text-center text-muted">Copyright &copy; 2020 - OneSource IT Solutions LLC</div>
     </div>
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

@@ -1,7 +1,7 @@
 
 document.querySelector('#emailForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    $.post('classes/starter.php?action=Insert', {
+    $.post('../classes/starter.php?action=Insert', {
         email: '' + document.getElementById('email').value + '',
         subject: '' + document.getElementById('Subject').value + '',
         message: '' + document.getElementById('message').value + ''
