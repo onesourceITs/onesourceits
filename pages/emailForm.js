@@ -6,6 +6,8 @@ document.querySelector('#emailForm').addEventListener('submit', function (e) {
         subject: '' + document.getElementById('Subject').value + '',
         message: '' + document.getElementById('message').value + ''
     }, function (d) {
+        alert(d);
+        return false;
         let dataObj = JSON.parse(d);
         if (dataObj.msg == 'true') {
             document.getElementById('modal-header').innerHTML = 'Thank You for Contacting Us!';

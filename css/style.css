@@ -1,15 +1,7 @@
-.social-icons {
-
-    margin-bottom: 2rem;
-    width: 100%;
-    z-index: 2;
-}
-
 .social-icons ul {
     margin-top: 2rem;
     width: 100%;
     text-align: center;
-    display: inline;
 }
 
 .social-icons ul>li {
@@ -30,13 +22,6 @@
 }
 
 @media (min-width: 768px) {
-    .social-icons {
-        margin: 0;
-
-        right: 2.5rem;
-        bottom: 2rem;
-        width: auto;
-    }
 
     .social-icons ul {
         margin-top: 0;

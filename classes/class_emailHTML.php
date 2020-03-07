@@ -21,6 +21,7 @@ class EmailHtml
         $msg = $this->httpMsgBody();
 
         /* ** LINE BELOW, is what tells the mail client or mail browser to read the email as html  ** */
+        $headers["from"] = "From: info@onesourceits.com";
         $headers["one"] = "Content-type:text/html";
 
         /* ** the implode function is not nessicary, but is if your passing more than one header, so I left it like this. ** */
