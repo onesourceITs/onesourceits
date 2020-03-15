@@ -1,6 +1,6 @@
 {
     "title": "onesourceits",
-    "name": "OneSource IT Solutions LLC",
+    "name": "OneSource-IT-Solutions-LLC",
     "version": "1.0.4",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
