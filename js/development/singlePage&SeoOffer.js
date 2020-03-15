@@ -6,11 +6,11 @@ $(function () {
 
     $('#firstOffer').submit(function (e) {
         e.preventDefault();
-        var formData = $(this).serialize();
+        let formData = $(this).serialize();
         $.ajax({
             type: 'POST',
             url: 'classes/contact.php?request=check',
-            beforeSend: function beforeSend() {
+            beforeSend: function () {
                 $('#SendRequest').attr('disabled', 'true');
                 createElement('span', '#SendRequest', 'prepend', attributes = [{
                     'name': 'class',
@@ -36,7 +36,7 @@ $(function () {
             },
             data: formData
         }).done(function (d) {
-            var dataObj = JSON.parse(d);
+            let dataObj = JSON.parse(d);
             if (dataObj.response == 1) {
                 $('#ThankYou').modal('show');
                 setTimeout(function () {
@@ -54,4 +54,5 @@ $(function () {
             }
         });
     });
+
 });
