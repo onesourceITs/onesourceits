@@ -63,3 +63,11 @@ a.badge:focus {
     color: #fff;
     background-color: #D4AF37;
 }
+
+/* custom background color */
+.custom-bg {
+    /*teal green */
+    /*background-color: #20c997;*/
+    /* blue */
+    background-color: #122232;
+}
