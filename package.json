@@ -1,39 +1,32 @@
 {
-    "title": "Creative",
-    "name": "startbootstrap-creative",
-    "version": "5.1.8",
+    "title": "onesourceits",
+    "name": "OneSource IT Solutions LLC",
+    "version": "1.0.4",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "Creative is a stylish one page HTML theme for Bootstrap.",
+    "description": "Onesourceits, is the business website for OneSource IT Solutions LLC.",
     "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
+        "web design",
+        "web development",
+        "brand awareness",
+        "online marketing",
+        "business management",
+        "web services"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/creative",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "homepage": "https://onesourceits.com",
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Keith Blackwelder",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "James Richie"
     ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
-    },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
         "bootstrap": "4.3.1",
         "jquery": "^3.4.1",
         "jquery.easing": "^1.4.1",
-        "magnific-popup": "^1.1.0"
+        "magnific-popup": "^1.1.0",
+        "popper.js": "^1.16.1"
     },
     "devDependencies": {
         "browser-sync": "2.26.7",
