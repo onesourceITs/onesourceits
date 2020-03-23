@@ -2,14 +2,11 @@
 /*
     ** primary class for OneSource IT Home website**
 */
+require_once '/var/www/html/server.php';
 require_once 'class_emailHTML.php';
 
-class OneSourceits
+class OneSourceits extends ConnectMe
 {
-    private $host = "localhost";
-    private $user = "mydba";
-    private $pass = "kotajadyqa6em";
-    private $db = "ositsprojects";
 
     // ========================
     // Do the Requested Action.
@@ -35,21 +32,6 @@ class OneSourceits
                 $class->$method();
                 $class = null;
             }
-        }
-    }
-
-    /*
-        ** Connect to db **
-    */
-
-    public function connection()
-    {
-        try {
-            $conn = new PDO("mysql:host=$this->host;dbname=$this->db", $this->user, $this->pass);
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $conn;
-        } catch (PDOException $e) {
-            echo "Error connecting to db: " . $e->getMessage();
         }
     }
 
